@@ -1,0 +1,41 @@
+{
+  propertyEditors: [
+    {
+      "alias": "MultilingualUrlPickerPropertyEditor",
+      "name": "Multilingual Url Picker",
+      "icon": "icon-smiley-inverted",
+      "group": "content",
+      "editor": {
+        "view": "~/App_Plugins/MultilingualUrlPickerPropertyEditor/multilingualurlpicker.propertyEditor.html",
+        "valueType": "JSON"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Minimum number of items",
+            "description": "",
+            "key": "minNumber",
+            "view": "number"
+          },
+          {
+            "label": "Maximum number of items",
+            "description": "",
+            "key": "maxNumber",
+            "view": "number"
+          }
+        ]
+      },
+      "defaultConfig": {
+        "minNumber": "0",
+        "maxNumber":  "0" 
+      } 
+    }
+  ],
+  javascript: [
+    "~/App_Plugins/MultilingualUrlPickerPropertyEditor/js/multilingualurlpicker.propertyEditor.controller.js",
+    "~/App_Plugins/MultilingualUrlPickerPropertyEditor/js/multilingualurlpicker.picker.controller.js"
+  ],
+  css: [
+    "~/App_Plugins/MultilingualUrlPickerPropertyEditor/css/multilingualurlpicker.picker.css"
+  ]
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultilingualUrlPickerPropertyEditor", "MultilingualUrlPickerPropertyEditor\MultilingualUrlPickerPropertyEditor.csproj", "{5AA0E952-EF90-4038-B84B-D6589A463C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultilingualUrlPickerPropertyEditor.Web", "MultilingualUrlPickerPropertyEditor.Web\MultilingualUrlPickerPropertyEditor.Web.csproj", "{8FDE6705-0696-4179-B23C-35D98BD0275E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B66718A5-814E-4766-AB2A-D8ED59662CE1}
+	EndGlobalSection
+EndGlobal
