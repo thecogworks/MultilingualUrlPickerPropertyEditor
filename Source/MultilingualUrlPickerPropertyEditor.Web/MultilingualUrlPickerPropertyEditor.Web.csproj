@@ -333,6 +333,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultilingualUrlPickerPropertyEditor\MultilingualUrlPickerPropertyEditor.csproj">
+      <Project>{dc00ab19-81ce-4901-8ea1-fad6f91c335e}</Project>
+      <Name>MultilingualUrlPickerPropertyEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -82,7 +82,7 @@
         var target = link ? {
             id: link.id,
             name: link.name,
-            anchor: link.queryString,
+            anchor: link.anchor,
             udi: link.udi,
             url: link.url,
             target: link.target,
@@ -111,6 +111,7 @@
                         link.target = model.target.target;
                         link.url = model.target.url;
                         link.culture = model.target.culture;
+                        link.anchor = model.target.anchor;
                     } else {
                         link = {
                             id: model.target.id,
@@ -119,7 +120,8 @@
                             target: model.target.target,
                             udi: model.target.udi,
                             url: model.target.url,
-                            culture: model.target.culture
+                            culture: model.target.culture,
+                            anchor: model.target.anchor
                         };
                         $scope.renderModel.push(link);
                     }
@@ -129,8 +131,7 @@
                             link.icon = iconHelper.convertFromLegacyIcon(data.icon);
                             link.published =
                                 data.metaData &&
-                                    data.metaData.IsPublished === false &&
-                                    entityType === 'Document'
+                                    data.metaData.IsPublished === false
                                     ? false
                                     : true;
                             link.trashed = data.trashed;

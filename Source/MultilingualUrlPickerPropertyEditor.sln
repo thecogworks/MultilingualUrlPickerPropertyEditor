@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultilingualUrlPickerPropertyEditor", "MultilingualUrlPickerPropertyEditor\MultilingualUrlPickerPropertyEditor.csproj", "{5AA0E952-EF90-4038-B84B-D6589A463C78}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultilingualUrlPickerPropertyEditor.Web", "MultilingualUrlPickerPropertyEditor.Web\MultilingualUrlPickerPropertyEditor.Web.csproj", "{8FDE6705-0696-4179-B23C-35D98BD0275E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultilingualUrlPickerPropertyEditor", "MultilingualUrlPickerPropertyEditor\MultilingualUrlPickerPropertyEditor.csproj", "{DC00AB19-81CE-4901-8EA1-FAD6F91C335E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5AA0E952-EF90-4038-B84B-D6589A463C78}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FDE6705-0696-4179-B23C-35D98BD0275E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC00AB19-81CE-4901-8EA1-FAD6F91C335E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC00AB19-81CE-4901-8EA1-FAD6F91C335E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC00AB19-81CE-4901-8EA1-FAD6F91C335E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC00AB19-81CE-4901-8EA1-FAD6F91C335E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
