@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <PackageId>Cogworks.MultilingualUrlPickerPropertyEditor</PackageId>
+    <PackageId>Cogworks.MultilingualUrlPicker</PackageId>
     <Authors>Greg Margol</Authors>
     <Company>Cogworks</Company>
     <Copyright>Cogworks 2020</Copyright>
@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/thecogworks/MultilingualUrlPickerPropertyEditor</RepositoryUrl>
     <PackageTags>Umbraco</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>MultilingualUrlPicker</Product>
   </PropertyGroup>
 
   <ItemGroup>
