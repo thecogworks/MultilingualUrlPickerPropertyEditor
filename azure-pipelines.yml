@@ -54,6 +54,6 @@ steps:
   displayName: 'Publish Artifact'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
-    ArtifactName: '$(Parameters.ArtifactName)'
+    ArtifactName: 'Cogworks.MultilingualUrlPicker'
   condition: succeededOrFailed()
 
