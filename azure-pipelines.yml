@@ -4,7 +4,9 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
 
 trigger:
-- master
+  tags:
+      include:
+        - '*'
 
 pool:
   vmImage: 'windows-latest'
@@ -25,7 +27,6 @@ steps:
    $ver = $env:BUILD_SOURCEBRANCH.remove(0, 10)
    Write-Host "##vso[task.setvariable variable=Version]$ver"
   displayName: 'Update version to Tag'
-  condition: and(failed(), startsWith(variables['Build.SourceBranchName'], 'master'))
 
 - task: Assembly-Info-NetFramework@2
   inputs:
@@ -41,7 +42,6 @@ steps:
     VersionNumber: '$(Version)'
     FileVersionNumber: '$(Version)'
     InformationalVersion: '$(Version)'
-  condition: and(failed(), startsWith(variables['Build.SourceBranchName'], 'master'))
 
 - task: VSBuild@1
   inputs:
