@@ -21,6 +21,28 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- powershell: |
+   $ver = $env:BUILD_SOURCEBRANCH.remove(0, 10)
+   Write-Host "##vso[task.setvariable variable=Version]$ver"
+  displayName: 'Update version to Tag'
+  condition: and(failed(), startsWith(variables['Build.SourceBranchName'], 'master'))
+
+- task: Assembly-Info-NetFramework@2
+  inputs:
+    Path: '$(Build.SourcesDirectory)'
+    FileNames: |
+      **\AssemblyInfo.cs
+    InsertAttributes: false
+    FileEncoding: 'auto'
+    WriteBOM: false
+    Description: 'Multilingual Multi Url Picker property editor for Umbraco'
+    Company: 'Cogworks'
+    Copyright: 'Copyright © $(date:YYYY) $(date:DD.MM.YYYY DD MMMM YYYY HH:mm a) Cogworks'
+    VersionNumber: '$(Version)'
+    FileVersionNumber: '$(Version)'
+    InformationalVersion: '$(Version)'
+  condition: and(failed(), startsWith(variables['Build.SourceBranchName'], 'master'))
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
