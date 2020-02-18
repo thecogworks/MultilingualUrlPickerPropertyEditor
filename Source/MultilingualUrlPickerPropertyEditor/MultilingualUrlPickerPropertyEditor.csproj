@@ -12,7 +12,7 @@
     <RepositoryUrl>https://github.com/thecogworks/MultilingualUrlPickerPropertyEditor</RepositoryUrl>
     <PackageTags>Umbraco</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Product>MultilingualUrlPicker</Product>
+    <Product>Cogworks.MultilingualUrlPicker</Product>
   </PropertyGroup>
 
   <ItemGroup>
